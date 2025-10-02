@@ -27,11 +27,11 @@ function App() {
       {cvData && <Resume cvData={cvData} />}
       <button onClick={() => window.print()}>Print CV</button>
       <button onClick={() => {
-        localStorage.removeItem('cvData');
-        setCvData(null);
-      }}>
-        Clear <CVq></CVq>
-      </button>
+      localStorage.removeItem('cvData');
+      setCvData(null);
+    }}>
+      Clear CV
+    </button>
     </div>
   );
 }
